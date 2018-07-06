@@ -1,6 +1,11 @@
 server:
   port: 9010
-  
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka/
+    enabled: true
   
 spring:
   thymeleaf:
@@ -29,11 +34,7 @@ mybatis:
   
   
   
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:9001/eureka/
-    enabled: true
+
     
 
       
