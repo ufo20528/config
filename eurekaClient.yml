@@ -21,6 +21,11 @@ spring:
     static-path-pattern: /static/**
   application:
     name: eurekaClient
+  rabbitmq:
+    host: 192.168.1.239
+    port: 5672
+    username: admin
+    password: admin
     
 
     
