@@ -28,7 +28,8 @@ mybatis:
   type-aliases-package: com.weizhe.eurekaClient.model
   
   
-  
+weizhe: 
+  test: 2018
 
     
 
