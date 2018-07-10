@@ -30,7 +30,7 @@ spring:
 
     
 mybatis:
-  type-aliases-package: com.weizhe.eurekaClient.model
+  type-aliases-package: com.weizhe.zuul.model
   
 
 
