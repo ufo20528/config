@@ -1,5 +1,5 @@
 server:
-  port: 9010
+  port: 9030
 
  
 spring:
@@ -20,37 +20,19 @@ spring:
   mvc:
     static-path-pattern: /static/**
   application:
-    name: eurekaClient
+    name: zuul
   rabbitmq:
     host: 192.168.1.239
     port: 5672
     username: admin
     password: admin
-  stream:
-      bindings:
-        inputMyMessage: 
-          destination: myMessage
-          group: test
-          content-type: application/json
-        outputMyMessage: 
-          destination: myMessage
-          group: test
-          content-type: application/json
-        inputTestMessage: 
-          destination: testMessage
-          group: test
-        outputTestMessage: 
-          destination: testMessage
-          group: test
     
 
     
 mybatis:
   type-aliases-package: com.weizhe.eurekaClient.model
   
-  
-weizhe: 
-  test: 2012
+
 
     
 
