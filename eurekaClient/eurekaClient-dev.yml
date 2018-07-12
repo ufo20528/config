@@ -17,8 +17,7 @@ spring:
   devtools:
     restart:
       enabled: true
-  mvc:
-    static-path-pattern: /static/**
+  
   application:
     name: eurekaClient
   rabbitmq:
