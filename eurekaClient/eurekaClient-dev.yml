@@ -17,8 +17,7 @@ spring:
   devtools:
     restart:
       enabled: true
-  mvc:
-    static-path-pattern: /static/**
+  
   application:
     name: eurekaClient
   rabbitmq:
@@ -43,7 +42,11 @@ spring:
           destination: testMessage
           group: test
     
-
+    
+    
+feign: 
+ hystrix: 
+  enable: true
     
 mybatis:
   type-aliases-package: com.weizhe.eurekaClient.model
