@@ -10,7 +10,7 @@ spring:
     static-path-pattern: /**
   datasource:
     name: test
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://192.168.1.240:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC
     username: root
     password: 1234
     type: com.alibaba.druid.pool.DruidDataSource
@@ -22,10 +22,10 @@ spring:
   application:
     name: eurekaClient
   rabbitmq:
-    host: 192.168.1.239
+    host: 192.168.1.240
     port: 5672
-    username: admin
-    password: admin
+    username: guest
+    password: guest
   stream:
       bindings:
         inputMyMessage: 
